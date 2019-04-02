@@ -24,7 +24,18 @@ namespace dotnetcore_mvc_boilerplate.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Contact(ContactViewModel contactVM)
+        {
+            if (ModelState.IsValid)
+            {
+                // Send an email or save the message in a table...
+                // Redirect to a page that says "Thanks for contacting us!"...
+                return RedirectToAction("Index");
+            }
 
             return View();
         }

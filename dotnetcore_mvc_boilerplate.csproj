@@ -26,9 +26,9 @@
     <Exec Command="npm install" />
   </Target>
 
-  <Target Name="NpmRunBuild" BeforeTargets="Build" DependsOnTargets="NpmInstall">
+<!--   <Target Name="NpmRunBuild" BeforeTargets="Build" DependsOnTargets="NpmInstall">
     <Exec Command="npm run build" />
-  </Target>
+  </Target> -->
 
   <Target Name="NpmClean" BeforeTargets="Clean">
     <RemoveDir Directories="$(WWWRoot)dist" />

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - dotnetcore_mvc_boilerplate</title>
 
+    @RenderSection("Scripts", required: false)
     <script type="module" src="~/dist/site.entry.js" defer></script>
     <link rel="stylesheet" href="~/dist/site.css">
 
@@ -39,6 +40,5 @@
         </footer>
     </div>
 
-    @RenderSection("Scripts", required: false)
 </body>
 </html>

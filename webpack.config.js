@@ -27,9 +27,6 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: "[name].css"
-        }),
-        new PurgecssPlugin({
-            paths: glob.sync('./Views/**/*.cshtml', {nodir: true})
         })
     ]
 };
